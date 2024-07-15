@@ -1,0 +1,145 @@
+#DRBC all production rules this is the test case
+// /\ precomList
+// \/ program
+//2. <precomList>
+// whole program covers 1<program> 3. <declList> 4. <decl> 5. <varDecl>
+
+main() { // /* empty */
+}
+
+//16<parmID> 13<parmList>, 12<parms>, 15<parmIdList>,11 <funDecl>
+int foo(int a, b[]; bool c, d; int e; char f) {
+
+   {a++; b[1]--;}
+   main();
+   foo(1, b, true, false, 123, 'f');
+}
+
+//11.<funDecl> 12.<parms>
+int emptyParams(){
+}
+
+int FunScopedVarDecl(){
+   //static int Racoon;
+}
+
+char blurazy(int a; char b){
+   char arr[1]: "t"; //remember declarations come first
+   bool c;
+   int g;
+   char o;
+   //10<typeSpec> is above
+
+   a = 3;
+
+   //41<unaryop> 40<unaryExp>
+   a= -3;
+   a = *arr;
+   a = ?7;
+
+   //39<mulop> 38<mulExp> <sumop> <sumExp>
+   a * a;
+   a / a;
+   a % a;
+
+   a + a;
+   a - a;
+
+   //35<minmaxop> 34<minmaxExp>
+   a = a :>: a;   //it sets a equal to the gratter value
+   a = a :<: a;
+
+   //33 <relop> 32<relExp>
+   c = a == a;
+   c = a != a;
+   c = a <= a;
+   c = a < a;
+   c = a > a;
+   c = a >= a;
+
+   //29<simpleExp> 30<andExp> 31<unaryRelExp>
+   c = c or c;
+   c = c and c;
+   c = not c;
+
+   //28<assignop>
+   a /= 1;
+   a *= 1;
+   a += 1;
+   a -= 1;
+   a = 1;
+
+   //26<breakstmt>
+   while c do{
+      break;
+   }
+
+   //18<matched>
+   if(a == 4 )then{
+      a=a;
+   }
+   else{
+      a=a;
+   }
+   b = 'w';
+   return b; //25<returnstmt>
+}
+
+   //<argList>
+int bar(int a, b[]; bool c, d; int e; char f){ //<args>
+   //<call>
+   blurazy(a,f);
+
+   //<immutabel> <factor>
+   if(false or (true or false)) then{
+
+      int a:2;
+   }
+
+   //<constant>
+   //<BOOLCONST>
+   if(true) then{
+      //<CHARCONST>
+      char a:'t';
+
+      //<STRINGCONST> <mutablel> <factor>
+      char t[15]:"the cat";
+   }
+   if(false) then{ //unmatched
+      //<NUMCONST>
+      int a:2;
+   }
+
+   while true do {
+      //scopedVarDeclList
+      static int variable;
+      if 1 < 2 then {
+         break;
+      } else {
+         break;
+      }
+   }
+   //iterrange
+   for i=1 to 10 by 3 do {
+   }
+// there is no reason why scrat from Ice Age is here I just got him from
+// ASCII ART ARCHIVE because you said it was funny seeing stuff like this
+// in the submisions
+//                          .-.
+//                        |/`\\.._
+//     _..._,,--.         `\ /.--.\ _.-.
+//  ,/'  ..:::.. \     .._.-'/    \` .\/
+// /       ...:::.`\ ,/:..| |(o)  / /o)|
+//|:..   |  ..:::::'|:..  ;\ `---'. `--'
+//;::... |   .::::,/:..    .`--.   .:.`\_
+// |::.. ;  ..::'/:..   .--'    ;\   :::.`\
+// ;::../   ..::|::.  /'          ;.  ':'.---.
+//  `--|    ..::;\:.  `\,,,____,,,/';\. (_)  |)
+//     ;     ..::/:\:.`\|         ,__,/`;----'
+//     `\       ;:.. \: `-..      `-._,/,_,/
+//       \      ;:.   ). `\ `>     _:\
+//        `\,  ;:..    \ \ _>     >'
+
+ //25<returnstmt>
+   return 3;
+}

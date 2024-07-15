@@ -1,0 +1,7 @@
+#DRBC This program is as simple as I can get.
+#DRBC This should compile without errors
+main() 
+{
+   int x;
+   x = 5;
+}

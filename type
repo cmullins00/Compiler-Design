@@ -1,0 +1,2 @@
+makefile:BIN  = bC
+makefile:	$(CC) $(CPPFLAGS) $(OBJS) $(LIBS) -o bC

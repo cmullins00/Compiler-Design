@@ -1,0 +1,38 @@
+#DRBC all production rule test case
+// /\ precomList
+// \/ program
+
+//test constant
+char zev[10]:"corgis"; //******************
+
+//varDeclList, typeSpec
+int x:42, y:666; //******************
+
+main() {
+}
+
+//parmID, parmList, parms, parmIdListm, funDecl
+int foo(int a, b[]; bool c, d; int e; char f) { //******************
+   //compound statement
+   //Also increment, decrement, and mutable
+   {a++; b[1]--;} //******************
+
+   //Call with args, arglist, also constant
+   foo(1, b, true, false, 123, 'f'); //******************
+
+   //unary exp and unary op
+   *b; //******************
+
+   main();
+
+   //matched/unmatched
+   while true do { //******************
+      //scopedVarDeclList
+      static int variable; //******************
+      if 1 < 2 then { //******************
+         break;
+      } else { //******************
+         break;
+      }
+   }
+}
