@@ -1,2 +1,2 @@
 # Compiler-Design
-I designed and implemented a grammar for the custom programming language bC, handling lexical analysis through tokenization, syntax validation, and semantic analysis to construct abstract syntax trees. This process culminated in generating Assembly code.
+In my Compiler Design class project, I developed a grammar to accommodate the custom programming language bC. This involved implementing a comprehensive compiler pipeline that encompassed lexical analysis via tokenization, rigorous syntax validation, and semantic analyis to construct abstract syntax trees (ASTs). The culmination of this effort was the generation of assembly code.
